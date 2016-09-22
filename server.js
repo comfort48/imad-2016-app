@@ -4,11 +4,19 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var breakingBad={
+var series={ 
+'BREAKING-BAD':{ 
   title:'BREAKING-BAD|SERIES',
   heading:'BREAKING BAD',
   release_date:'jan 20 2008',
-  content:` <p>In this series the main role is played by:</p>`
+
+},
+'BLACKLIST':{
+    title:'BLACKLIST|SERIES',
+    heading:'BLACKLIST',
+    release_date:'sep 23 2013',
+    
+}
 };
 function createTemplate(data){
     var title=data.title;
@@ -24,7 +32,7 @@ function createTemplate(data){
             <h1 style="text-align:center;text-decoration:underline">${heading}</h1>
             <p><span class="main2">release-date</span>:${release_date}</p>
             <br></br>
-             ${content}
+              <p>In this series the main role is played by:</p>
            <div class="main"><p><span class="main2">HERO</span>:BRYAN CRANSTONE</p></div> 
         </body>
     </html>` ;
@@ -35,8 +43,9 @@ function createTemplate(data){
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/ui/BREAKING-BAD.html', function (req, res) {
-  res.send(createTemplate(breakingBad));
+app.get('/ui/:seriesName', function (req, res) {
+    seriesName=req.params.seriesName;
+  res.send(createTemplate(series[seriesName]));
 });
 app.get('/ui/BLACKLIST.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'BLACKLIST.html'));
