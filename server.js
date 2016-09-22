@@ -31,7 +31,7 @@ var htmlTemplate=`
     <html>
         <head>
             <title>${title}</title>
-            <link type="text/css" rel="stylesheet" href="/ui/style.css" />
+           <link href="/ui/style.css" rel="stylesheet" />
         </head>
         <body>
             <h1 style="text-align:center;text-decoration:underline">${heading}</h1>
