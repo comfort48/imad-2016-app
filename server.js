@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-/*var series={ 
+var series={ 
 'BREAKING-BAD':{ 
   title:'BREAKING-BAD|SERIES',
   heading:'BREAKING BAD',
@@ -42,16 +42,16 @@ var htmlTemplate=`
         </body>
     </html>` ;
     return htmlTemplate;
-}*/
+}
 
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-/*app.get('/ui/:seriesName', function (req, res) {
+app.get('/ui/:seriesName', function (req, res) {
    var seriesName=req.params.seriesName;
   res.send(createTemplate(series[seriesName]));
-});*/
+});
 
 
 app.get('/ui/style.css', function (req, res) {
