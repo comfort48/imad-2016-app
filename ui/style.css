@@ -1,6 +1,7 @@
 body {
     font-family:Courier;
     margin-top: 60px;
+    background-color:#98fb98;
 }
 
 .center {
@@ -19,3 +20,10 @@ body {
     height: 200px;
 }
 
+.main{
+    text-align:center;
+    background-color:green;
+}
+.main2{
+    text-decoration:underline;
+}
