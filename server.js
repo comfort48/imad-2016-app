@@ -37,8 +37,8 @@ function createTemplate(data){
             <h1 style="text-align:center;text-decoration:underline">${heading}</h1>
             <p><span class="main2">release-date</span>:${release_date}</p>
             <br></br>
-              <p>In this series the main role is played by:</p>
-           <div class="main"><p><span class="main2">HERO</span>:${hero}</p></div> 
+            <p>In this series the main role is played by:</p>
+            <div class="main"><p><span class="main2">HERO</span>:${hero}</p></div> 
         </body>
     </html>` ;
     return htmlTemplate;
