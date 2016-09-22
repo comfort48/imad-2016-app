@@ -27,11 +27,11 @@ function createTemplate(data){
     var hero=data.hero;
    
 
-    var htmlTemplate=`
+var htmlTemplate=`
     <html>
         <head>
             <title>${title}</title>
-            <link href="/ui/style.css" rel="stylesheet" /> 
+            
         </head>
         <body>
             <h1 style="text-align:center;text-decoration:underline">${heading}</h1>
