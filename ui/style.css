@@ -20,5 +20,7 @@ body {
     height: 200px;
 }
 .main{
+    margin:auto;
+    background-color:green;
     
 }
