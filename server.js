@@ -11,6 +11,9 @@ app.get('/', function (req, res) {
 app.get('/ui/BREAKING-BAD.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'BREAKING-BAD.html'));
 });
+app.get('/ui/BLACKLIST.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'BLACKLIST.html'));
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
