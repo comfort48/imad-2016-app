@@ -47,9 +47,7 @@ app.get('/ui/:seriesName', function (req, res) {
    var seriesName=req.params.seriesName;
   res.send(createTemplate(series[seriesName]));
 });
-app.get('/ui/BLACKLIST.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'BLACKLIST.html'));
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
