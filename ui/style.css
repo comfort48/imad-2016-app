@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: Courier;
     background-color: lightgrey;
     margin-top: 75px;
 }
@@ -20,8 +20,8 @@ body {
     height: 200px;
 }
 .main{
-    margin:20px 50px 30px 50px;
+    
     background-color:green;
-    font-family:Courier;
+   
     font-size:30em;
 }
