@@ -9,12 +9,14 @@ var series={
   title:'BREAKING-BAD|SERIES',
   heading:'BREAKING BAD',
   release_date:'jan 20 2008',
+  hero:'BRYAN CRANSTONE'
 
 },
 'BLACKLIST':{
     title:'BLACKLIST|SERIES',
     heading:'BLACKLIST',
     release_date:'sep 23 2013',
+     hero:'JAMES SPADER'
     
 }
 };
@@ -22,6 +24,7 @@ function createTemplate(data){
     var title=data.title;
     var heading=data.heading;
     var release_date=data.release_date;
+    var hero=data.hero;
    
 
     var htmlTemplate=`<html>
@@ -33,7 +36,7 @@ function createTemplate(data){
             <p><span class="main2">release-date</span>:${release_date}</p>
             <br></br>
               <p>In this series the main role is played by:</p>
-           <div class="main"><p><span class="main2">HERO</span>:BRYAN CRANSTONE</p></div> 
+           <div class="main"><p><span class="main2">HERO</span>:${hero}</p></div> 
         </body>
     </html>` ;
     return htmlTemplate;
