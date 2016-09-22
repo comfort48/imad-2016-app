@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/ui/BREAKING-BAD.html', function (req, res) {
-  res.send(createTemplate(breakingBad   ));
+  res.send(createTemplate(breakingBad));
 });
 app.get('/ui/BLACKLIST.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'BLACKLIST.html'));
