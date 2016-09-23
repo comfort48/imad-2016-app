@@ -48,7 +48,7 @@ var htmlTemplate=`
 app.get('/:seriesName', function (req, res) {
    var seriesName=req.params.seriesName;
   res.send(createTemplate(series[seriesName]));
-});*/
+});
 
 
 
