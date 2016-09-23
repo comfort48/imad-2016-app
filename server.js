@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-/*var series={ 
+var series={ 
 'BREAKING-BAD':{ 
   title:'BREAKING-BAD|SERIES',
   heading:'BREAKING BAD',
@@ -48,7 +48,7 @@ var htmlTemplate=`
 app.get('/ui/:seriesName', function (req, res) {
    var seriesName=req.params.seriesName;
   res.send(createTemplate(series[seriesName]));
-});*/
+});
 
 
 
