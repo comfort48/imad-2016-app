@@ -12,6 +12,6 @@ button.onclick=function(){
 			}
 		}
 	};
-request.open('GET','http://localhost:8080/ui/counter',true);
+request.open('GET','http://comfort48.imad.hasura-app.io//ui/counter',true);
 request.send(null);
 };
