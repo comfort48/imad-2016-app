@@ -1,4 +1,5 @@
 
+//FOR LIKES COUNTER.
 var button=document.getElementById('counter');
 button.onclick=function(){
 	var request=new XMLHttpRequest();
@@ -15,3 +16,12 @@ button.onclick=function(){
 request.open('GET','http://comfort48.imad.hasura-app.io/ui/counter',true);
 request.send(null);
 };
+
+
+//----------------------------------------------------------------------------------------------------------------------------------
+
+
+//FOR COMMENTS.
+
+
+
