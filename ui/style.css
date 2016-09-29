@@ -8,8 +8,9 @@ body {
 
 }
 #name{
-    width:400px;
-    height:80px;
+    width:100px;
+    height:30px;
+    text-align:center;
 }
 #counter{
     background-color: #4CAF50;
