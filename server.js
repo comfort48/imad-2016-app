@@ -52,6 +52,13 @@ var htmlTemplate=`
     </html>` ;
     return htmlTemplate;
 }
+var names=[];
+app.get('/submit-name',function(req,res){
+   
+   var name=req.query.name;
+   names.push(name);
+   res.send(JSON.stringify(names));
+});
 app.get('/:seriesName', function (req, res) {
    var seriesName=req.params.seriesName;
   res.send(createTemplate(series[seriesName]));
