@@ -7,6 +7,10 @@ body {
     height:150px;
 
 }
+#name{
+    width:400px;
+    height:80px;
+}
 #counter{
     background-color: #4CAF50;
     border: none;
