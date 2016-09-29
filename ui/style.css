@@ -15,6 +15,7 @@ body {
 }
 #sub_btn{
     height:30px;
+    text-align:center;
 }
 #counter{
     background-color: #4CAF50;
