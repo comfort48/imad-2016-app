@@ -10,8 +10,10 @@ body {
 #name{
     width:400px;
     height:30px;
-    text-align:center;
     font-size:40px;
+    
+}
+#sub_button{
     
 }
 #counter{
