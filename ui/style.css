@@ -13,6 +13,10 @@ body {
     font-size:40px;
     
 }
+#sub_btn{
+    height:30px;
+    
+}
 #counter{
     background-color: #4CAF50;
     border: none;
