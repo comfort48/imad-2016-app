@@ -42,6 +42,7 @@ submit.onclick=function(){
                 var ul=document.getElementById('namelist');
                 ul.innerHTML=list;
             }
+            name="";
         }
     };
     request.open('GET','http://comfort48.imad.hasura-app.io/submit-name?name='+name,true);
