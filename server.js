@@ -58,7 +58,8 @@ app.get('/submit-name',function(req,res){
    var name=req.query.name;
    if(name!=="")
    {names.push(name);}
-   res.send(JSON.stringify(names));
+   if(names!==""){
+   res.send(JSON.stringify(names));}
 });
 app.get('/:seriesName', function (req, res) {
    var seriesName=req.params.seriesName;
