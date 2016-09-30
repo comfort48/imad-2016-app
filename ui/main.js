@@ -28,6 +28,7 @@ var submit=document.getElementById('sub_btn');
 submit.onclick=function(){
     var nameInput=document.getElementById('name');
     var name=nameInput.value;
+    nameInput.value="";
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE){
@@ -42,7 +43,7 @@ submit.onclick=function(){
                 var ul=document.getElementById('namelist');
                 ul.innerHTML=list;
             }
-            nameInput.value="";
+            
         }
     };
     request.open('GET','http://comfort48.imad.hasura-app.io/submit-name?name='+name,true);
