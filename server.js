@@ -60,7 +60,7 @@ app.get('/submit-name',function(req,res){
    {names.push(name);}
    if(names!==""){
    res.send(JSON.stringify(names));}
-   if(names!==""){
+   if(names===""){
        res.send("");
    }
 });
